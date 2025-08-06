@@ -1,0 +1,110 @@
+/* Base styling */
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #ffffff;
+  font-family: "Comic Sans MS", "Courier New", cursive;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headers */
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #ff00ff;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px #000;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #00ffcc;
+  text-shadow: 1px 1px 2px #222;
+}
+
+/* Divs and spans */
+div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px dashed #fff;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s;
+}
+
+div:hover {
+  transform: scale(1.05);
+}
+
+span {
+  display: inline-block;
+  background: #ff69b4;
+  color: #000;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+/* Fieldset and buttons */
+fieldset {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 20px #fff;
+}
+
+legend {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  color: #00ffff;
+}
+
+input[type="button"] {
+  background: #ff00ff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff00ff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+input[type="button"]:hover {
+  background: #ffff00;
+  color: #000;
+  transform: scale(1.1) rotate(-2deg);
+}
+
+/* Tableau container */
+#tableauViz {
+  margin-top: 2rem;
+  border: 5px double #00ffff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00ffff;
+}
